@@ -8,7 +8,7 @@ body{
     width: 95vw;
     margin: auto;
     grid-template-areas:
-    "header nav nav"
+    
     "sec1 sec1 sec1"
     "sec2 sec2 sec2"
     "sec3 sec3 sec3"
@@ -16,7 +16,7 @@ body{
     "sec5 sec5 sec5"
     "footer footer footer"
     ;
-    grid-template-rows: 2fr 10fr 2fr 10fr 5fr 5fr 2fr ;
+    grid-template-rows: 9fr 2fr 10fr 5fr 5fr 2fr ;
 
 
 }
@@ -24,17 +24,19 @@ body{
 #sec1{
     display:grid;
     grid-area: sec1;
-    background-color: rgb(179, 144, 192);
+    background-color: rgb(179, 144, 190);
     grid-template-areas: 
         "bfsec2 bfsec3 bfsec1"
     ;
-    grid-template-columns: 70px 1fr 355px;
+    grid-template-columns: 70px 1fr 320px;
     
 }
 
 #sec2{
-    background-color: rgb(235, 192, 0);
+    background-color: rgb(218, 178, 0);
     grid-area: sec2;
+    color: aliceblue;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
 }
 
 #sec3{
@@ -56,19 +58,16 @@ body{
     border: 1px solid black;
     grid-area: sec5;
 }
-header{
-    
-    grid-area: header;
-    background-color: rgb(31, 31, 31);
-}
+
 
 nav{
-   
- 
-    border: 1px solid black;
+    height: 79px;
+    width: 220px;
     grid-area: nav;
     background-color: rgb(31, 31, 31);
     color: white;
+    background-image: url(../img/others/nti_zoo_logga.png);
+    background-size: contain;
 }
 
 footer{
@@ -120,3 +119,15 @@ p:hover{
 #bfsec2 {
     grid-area: bfsec2;
 }
+
+#hb {
+    display: grid;
+    width: 100vw;
+    margin: auto;
+    height: 770px;
+    background-image: url(../img/others/a-g-YuQgNYku1M8-unsplash.jpg);
+    background-size: cover;
+    
+    
+}
+
