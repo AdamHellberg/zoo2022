@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(255, 255, 255);
+   background-color: rgb(26, 7, 63); 
+   margin: 0; 
 }
 
 #wrapper{
@@ -28,7 +29,7 @@ body{
     grid-template-areas: 
         "bfsec2 bfsec3 bfsec1"
     ;
-    grid-template-columns: 70px 1fr 320px;
+    grid-template-columns: 70px 1fr 347px;
     
 }
 
@@ -37,14 +38,15 @@ body{
     grid-area: sec2;
     color: aliceblue;
     font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    
 }
 
 #sec3{
     display: flex;
-    border: 1px solid black;
     grid-area: sec3;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(109, 169, 169);
 
 
 }
@@ -60,15 +62,6 @@ body{
 }
 
 
-nav{
-    height: 79px;
-    width: 220px;
-    grid-area: nav;
-    background-color: rgb(31, 31, 31);
-    color: white;
-    background-image: url(../img/others/nti_zoo_logga.png);
-    background-size: contain;
-}
 
 footer{
     border: 1px solid black;
@@ -121,13 +114,89 @@ p:hover{
 }
 
 #hb {
-    display: grid;
+    display: flex;
     width: 100vw;
-    margin: auto;
     height: 770px;
     background-image: url(../img/others/a-g-YuQgNYku1M8-unsplash.jpg);
     background-size: cover;
+    justify-content: space-around;
+    text-align: center;
+    grid-template-rows: 80px auto auto; 
+    position: sticky; 
+    top: 0px;
+    z-index: -1;  
+}
+
+header{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    grid-area: header;
+    height: 70px; 
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#logga{
+  
+    border: 1px sloid white;
+    color: white;
+    grid-area: logga; 
+    height: 70px;
+    width: 200px;
+    background-image: url(../img/others/nti_zoo_logga.png);
+    background-size: cover;
+    margin-top: 20px
     
     
 }
 
+nav{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    grid-area: nav;
+    height: 70px;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+
+
+#konto{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    grid-area: nav;
+    height: 70px;
+    margin-top: 20px;
+    font-size: 25px;
+    
+}
+
+#aboutus {
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    grid-area: nav;
+    height: 70px;
+    margin-top: 20px;
+    font-size: 25px;
+    
+}
+
+hr{
+
+    width: 90%;
+    position: sticky;
+    top: -630px;
+}
+hr{
+    margin-top: -40px;
+    
+}
+
+#aboutus:hover{
+    color: aquamarine;
+}
