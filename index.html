@@ -33,14 +33,25 @@
         </section>
         <section id="sec2">Nti zoo är perfekt för barn och sånt</section>
         <section id="sec3">
-            <section id="flex1">flexbox 1</section>
+            <section id="flex1">Barnavdelnigen</section>
             <section id="flex2">flexbox 2</section>
             <section id="flex3">flexbox 3</section>
         </section>
         <section id="sec4"> section 4</section>
         <section id="sec5"> section 5</section>
+
+       
     </div>
-    
+    <script>
+        var div = document.querySelector('#hb');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY >= 450) {
+            div.style.opacity = 0;
+            } else {
+            div.style.opacity = 1;
+            }
+        });
+     </script>
    
 </body>
 </html>
