@@ -11,41 +11,63 @@
 
 
 <div id="hb">
-    
-    <header>header</header>
-    <section id="aboutus">om oss</section>
     <section id="logga"></section>
-    <section id="konto">konto</section>
-    <nav>nav</nav>
 </div>
-<hr>
+
     <div id="wrapper">
         
-        <footer>footer</footer>
        <section id="sec1"> 
             <section id="bfsec1"></section>
             <section id="bfsec3">
-                DITT ÄVENTYR BÖRJAR HÄR!
-              <p>Boka ditt besök nu → </p>
-
+               <h1> DITT ÄVENTYR BÖRJAR HÄR!</h1>
+               <p class="body_text">Visste du att NTI ZOO är sveriges ända zoo med 
+                arter från alla jordens världsdelar? inte nog med det, vi har även 
+                djur från världens alla sju hav! Vi fokuserar mycket på att anpassa 
+                vår park så den är lämplig för hela familjen, vi är därför nu stolta
+                meddela att vi nu öppnat en helt ny barnavdelning. Kom hit och ta reda på mer!
+               </p>
+            <a href="aboutus.html">
+                <button id="mos">mer om oss ➔</button>
+            </a>
             </section>
             <section id="bfsec2"></section>
         </section>
-        <section id="sec2">Nti zoo är perfekt för barn och sånt</section>
+        <section id="sec2">
+            <section id="open_time"></section>
+            <section id="maps"></section>
+            <section id="ticket"></section>
+            <section id="event"></section>
+
+        </section>
         <section id="sec3">
             <section id="flex1">Barnavdelnigen</section>
-            <section id="flex2">flexbox 2</section>
-            <section id="flex3">flexbox 3</section>
+            <section id="flex2">Om Våra Djur</section>
+            <section id="flex3">Mat Och Dryck</section>
         </section>
-        <section id="sec4"> section 4</section>
-        <section id="sec5"> section 5</section>
+        <section id="sec4"> 
+            <section id="fish1"></section>¨
+            <section id="fr">
+                <h1 id="rubrik">Vattenavdelningen</h1>
+                <p class="body_text">Vi är stålta att meddela att vi i år har laggt till 10 nya exotiska fisk-arter till vårt aquarium! Qlown-fisk/nemofisk är en av dem. Kom hit och se för dig själv!</p>
+                <button id="mer">mer om Vattenavdelningen</button>
+            </section>
+            <section id="fish2"></section>
+            
+        </section>
+        <section id="sec5"> 
+            <h1 id="klimat">Följ Oss För Att Inte Missa Något</h1>
+        </section>
+        <footer>
+            <section id="instagram"></section>
+            <section id="twitter"></section>
+        </footer>
 
        
     </div>
     <script>
         var div = document.querySelector('#hb');
         window.addEventListener('scroll', function() {
-            if (window.scrollY >= 450) {
+            if (window.scrollY >= 550) {
             div.style.opacity = 0;
             } else {
             div.style.opacity = 1;
