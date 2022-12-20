@@ -162,10 +162,10 @@ header{
 
 #logga{
     color: white;
-    height: 70px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     background-image: url(../img/others/nti_zoo_logga.png);
-    background-size: cover;
+    background-size: contain;
     margin-top: 30px;
     margin-left: 50px;
     
