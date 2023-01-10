@@ -1,0 +1,100 @@
+#wrapper{
+    height: 85vh;
+    width: 180vw;
+    background-color: rgba(231, 225, 209, 0.086);
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+   
+}
+
+body{
+    display:flex;
+    height: 100vh;
+    width: 190vw;
+    background-color: rgb(28, 28, 26);
+    background-image: url(../img/¨mat-dryck/resturang1.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#caffe {
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 450px;
+    z-index: 2;
+    background-image: url(../img/¨mat-dryck/starbucks.png);
+    background-size: contain;
+    transition-duration: 1s;
+
+}
+
+#burgers {
+    height: 600px;
+    width: 450px;
+    background-image: url(../img/¨mat-dryck/sandwitchkingdom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+}
+
+#candy_shop {
+    height: 600px;
+    width: 450px;
+    background-image: url(../img/¨mat-dryck/sweetchilli.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+}
+
+#tillbaka{
+    background-color: rgb(231, 226, 219);
+    position: fixed;
+    top: 10px;
+    height: 50px;
+    width: 100px;
+    left: 40px;
+    font-size: 20px;
+    transition-duration: 1s;
+    
+    
+}
+
+#pizza{
+    height: 600px;
+    width: 450px;
+    background-image: url(../img/¨mat-dryck/ntipizza.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+}
+
+#caffe:hover{
+    transform: scale(1.2)
+}
+
+#burgers:hover{
+    transform: scale(1.2)
+}
+
+#candy_shop:hover{
+    transform: scale(1.2)
+}
+
+#pizza:hover{
+    transform: scale(1.2)
+}
+#rubrik{
+    color: rgb(252, 244, 233);
+    font-size: 50px;
+    position: fixed;
+    bottom: 715px;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    left: 1150px;
+}
+
+#tillbaka:hover{
+    transform: scale(1.1)
+}

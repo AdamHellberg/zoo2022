@@ -10,16 +10,22 @@
 body{
     margin: 0;
     height: 550vh;
+    background-color: black;
 }
 
 #sec3{
-    background-color: rgb(60, 255, 38);
+    background-color: rgb(255, 255, 255);
     background-size: cover;
     height: 100vh;
-    width: 100wv;
+    width: 100vw;
     position: sticky;
     top: 0;
     z-index: 1;
+    display: grid;
+    grid-template-areas: 
+        "textruta-sec3 bild-sec3"
+    ;
+    grid-template-columns:500px auto;
 }
 
 #sec2{
@@ -27,17 +33,210 @@ body{
     background-image: url(../img/om\ oss/personal.jpg);
     background-size: cover;
     height: 100vh;
-    width: 100wv;
+    width: 100vw;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: flex-end;
+    
 }
 
 #sec4{
     background-color: rgb(124, 161, 187);
     background-size: cover;
     height: 100vh;
-    width: 100wv;
+    width: 100vw;
     position: sticky;
     top: 0;
     z-index: 1;
+    display: grid; 
+    grid-template-areas:
+        "bild-sec4 textruta-sec4"
+    ;
+    grid-template-columns:1.5fr 1fr;
+    
+    
+}
+
+.rubrik1 {
+    font-size: 50px;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#miljoarbeten {
+    text-align: center;
+    align-items: center;
+}
+
+.brodtext {
+    font-size: 16px;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.842);
+    text-shadow: rgba(0, 0, 0, 0.638) 1px 0 20px;
+    
+}
+
+#textblock1-sec2{
+    grid-area: textblock1-sec2;
+}
+
+#textblock2-sec2{
+    grid-area: textblock2-sec2;
+}
+
+#textblock3-sec2{
+    grid-area: textblock3-sec2;
+}
+
+#wrapper-sec2 {
+    display: grid;
+    grid-template-areas: 
+        "textblock1-sec2 textblock1-sec2"
+        "textblock2-sec2 textblock3-sec2"
+    ;
+    grid-template-rows: 100px auto;
+    width: 30vw;
+    margin-right: 50px;
+}
+
+.rubrik2 {
+    font-size: 50px;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    color: rgb(94, 87, 59, 0.842);
+    text-align: center;
+}
+
+.brodtext2 {
+    font-size: 25px;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    color: rgba(94, 87, 59, 0.842);
+    margin: 20px;
+}
+
+#bild-sec3{
+    grid-area: bild-sec3;
+    background-image: url(../img/om\ oss/zoo.png);
+    background-size: cover;
+}
+
+#textruta-sec3{
+    grid-area: textruta-sec3;
+    background-color: rgb(255, 245, 214);
+}
+
+#textruta-sec4{
+    grid-area: textruta-sec4;
+    background-color: rgb(54, 198, 44);
+}
+
+#bild-sec4{
+    grid-area: bild-sec4;
+    background-image: url(../img/om\ oss/vattenavdelning.jpg);
+    background-size: cover;
+}
+
+.rubrik3 {
+    font-size: 50px;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    color: rgb(61, 80, 94);
+    text-align: center;
+}
+
+.brodtext3 {
+    font-size: 25px;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    color: rgba(59, 81, 94, 0.842);
+    margin: 20px;
+}
+
+#sec5{
+    height: 150vh;
+    width: 100vw; 
+    position: sticky;
+    top: 0;
+    background-color: rgb(36, 49, 42);
+    z-index: 2;
+    display: grid;
+    grid-template-areas: 
+        "header2 header2 header2"
+        "bild-sec5 bild-sec5 bild-sec5"
+        "textruta-sec5 textruta-sec5 textruta-sec5"
+        "footer footer footer"
+    ;
+    grid-template-rows: 170px 800px 200px 100px;
+    font-size: 100px
+}
+ 
+#textruta-sec5{
+    grid-area: textruta-sec5; 
+    background-color: black;
+}
+
+#bild-sec5{
+    grid-area: bild-sec5;
+    background-image: url(../img/om\ oss/maps.jpeg);
+}
+
+#header2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    grid-area: header2;
+    font-family: impact, Roboto, Arial, Helvetica, sans-serif;
+    color:rgb(122, 167, 117)
+}
+@keyframes test{
+    0%{transform:translateY(0px)}
+    50%{transform:translateY(50px)}
+    100%{transform:translateY(0px)}
+}
+footer{
+    display: flex;
+    background-color: black;
+    grid-area: footer;
+    justify-content: space-around;
+    
+}
+
+#instagram{
+    background-image:url(../img/others/instagram.png);
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    transition-duration: 1s;
+}
+
+#twitter{
+    background-image: url(../img/others/twitter.png);
+    height: 150px;
+    width: 90px;
+    background-size: 90px;
+    transition-duration: 1s;
+    margin-bottom: 150px;
+    background-repeat: no-repeat;
+}
+
+#twitter:hover{
+    transform: scale(1.1) rotate(7deg)
+}
+#instagram:hover{
+    transform: scale(1.1) rotate(-7deg)
+
+}
+#tillbaka {
+    height: 50px;
+    width: 100px;
+    position: fixed;
+    top: 10px;
+    z-index: 4;
+    background-color: rgb(199, 223, 215);
+    color: rgb(45, 47, 46);
+    left: 10px;
+    transition-duration: 1s;
+}
+
+#tillbaka:hover{
+    transform: scale(1.1) 
 }
